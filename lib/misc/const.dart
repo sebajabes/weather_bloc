@@ -2,6 +2,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class AppConfig {
   String? weatherApiKey = dotenv.env['WEATHER_API_KEY'];
+  String? appName = dotenv.env['APP_NAME'];
 }
 
 const String appName = 'Weather App';

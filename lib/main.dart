@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:weather_app/misc/const.dart';
 
 import 'src/features/features.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: '${AppConfig().appName}',
         theme: ThemeData(
           appBarTheme: const AppBarTheme(centerTitle: true),
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
